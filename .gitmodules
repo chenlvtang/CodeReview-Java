@@ -1,0 +1,6 @@
+[submodule "check-rules/my-rules"]
+	path = check-rules/my-rules
+	url = https://github.com/chenlvtang/MySemgrepRules.git
+[submodule "check-rules/official-rules"]
+	path = check-rules/official-rules
+	url = https://github.com/returntocorp/semgrep-rules.git
