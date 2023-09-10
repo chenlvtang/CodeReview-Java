@@ -4,3 +4,9 @@
 [submodule "check-rules/official-rules"]
 	path = check-rules/official-rules
 	url = https://github.com/returntocorp/semgrep-rules.git
+[submodule "code/ujcms"]
+	path = code/ujcms
+	url = https://github.com/ujcms/ujcms.git
+[submodule "code/fastcms"]
+	path = code/fastcms
+	url = https://github.com/my-fastcms/fastcms.git
