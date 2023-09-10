@@ -1,3 +1,0 @@
-# Application Run Listener
- org.springframework.boot.SpringApplicationRunListener=\
-  com.fastcms.core.listener.FastcmsApplicationRunListener
