@@ -16,7 +16,7 @@ git checkout 43f2b849
 
 生成的结果以json格式输出并保存在res目录中。并没有直接的显示出哪里存在Zip Slip漏洞，但是搜索路径穿越的第一个结果和Zip有关。
 
-![image-20230919213330623](C:\Users\沉铝汤\Desktop\Java代码审计\writeup\img\fastcms\image-20230919213330623.png)
+![image-20230919213330623](./img/fastcms/image-20230919213330623.png)
 
 ```json
 "check_id": "semgrep-rules.java.spring.security.injection.tainted-file-path",
@@ -180,7 +180,7 @@ git checkout 43f2b849
 
 根据信息，source为TemplateController的105行，sink为118行，如下图所示：
 
-![image-20230919221606246](C:\Users\沉铝汤\Desktop\Java代码审计\writeup\img\fastcms\image-20230919221606246.png)
+![image-20230919221606246](./img/fastcms/image-20230919221606246.png)
 
 可以看出这里参数“file”可控，确实存在目录穿越，但是因为限定了zip后缀，所以危害不大，也不是此次的重点。跟进第121行的install方法，如下：
 
